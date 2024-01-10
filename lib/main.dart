@@ -1,18 +1,9 @@
 
 import 'package:flutter/material.dart';
 
+// IF we do't use material app we can't get proper advantage. but we can
 void main() {
 
-  return runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,  // okay this is third
-    home: Scaffold(
-      appBar: AppBar(title: Text("hello flutter developer"),),
-      body: Center(child: Column(children: [
-        Text(
-          "this is",
-          textAlign: TextAlign.left,
-        ),
-      ],)),
-    )
-  ));
+  return runApp(Text("This got error"));
+
 }
