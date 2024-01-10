@@ -32,17 +32,17 @@ class _Home_ScreenState extends State<Home_Screen> {
   Widget build(BuildContext context) {
     return Scaffold(
 
-      appBar: AppBar(
-        title: Text("This is AppBar of MyApp"),
-        backgroundColor: Colors.green,
-        centerTitle: true,                                                             // lekha ta majhkhane jabe
-        toolbarHeight: 60,                                                            // total toolbar er height barbe kombe
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),       // shape ta circular hoye jabe
-        leading: IconButton(onPressed: (){},icon: Icon(Icons.phone),),                // left side a ekta icon make hobe , phone er icon
-        actions: [                                                                    // sob rokom widgets dewa jabe
-          IconButton(onPressed: (){}, icon: Icon(Icons.shopping_bag)),                // right side a ekta icon make holo
-          IconButton(onPressed: (){}, icon: Icon(Icons.man)),                         // duita icon holo
-        ],
+      body: Container(
+        height: 300,
+        width: 300,
+        margin: EdgeInsets.fromLTRB(10,10,10,10),
+        padding: EdgeInsets.fromLTRB(10,10, 10, 10),
+        child: Text("This is body part",style: TextStyle(fontSize: 30),),
+        alignment:Alignment.center,
+        decoration: BoxDecoration(
+          color: Colors.blue,
+          borderRadius: BorderRadius.only(bottomRight: Radius.circular(50),topLeft: Radius.circular(50))
+        ),
       ),
     );
   }
