@@ -34,8 +34,7 @@ class _Home_ScreenState extends State<Home_Screen> {
     return Scaffold(
 
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisSize: MainAxisSize.min,     // min size nibe , full nibe na.
         children: [
           Text("java course",style: TextStyle(fontSize: 22),),
           Text("c++ course",style: TextStyle(fontSize: 22),),
