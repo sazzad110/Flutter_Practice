@@ -12,10 +12,9 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-
         primarySwatch: Colors.blue,
       ),
-      home: Home_Screen(),    // Calling Home_Screen
+      home: Home_Screen(), // Calling Home_Screen
     );
   }
 }
@@ -32,16 +31,45 @@ class _Home_ScreenState extends State<Home_Screen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        body: Container(
+      padding: EdgeInsets.symmetric(vertical: 40, horizontal: 90),
+      child: Column(
+        children: [
+          // Normal Text Button
+          TextButton(
+            onPressed: () {},
+            child: Text("Register"),
+            style: TextButton.styleFrom(
+                elevation: 20,
+                backgroundColor: Colors.green,
+                side: BorderSide(
+                  width: 2,
+                  color: Colors.black,
+                  style: BorderStyle.solid,
+                )),
+          ),
 
-      body: Center(
-        child: Card(
-          color: Colors.blue,
-          elevation: 60,
-          shadowColor: Colors.blueAccent,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.only(topLeft:Radius.circular(40),bottomRight:Radius.circular(40))),
-          child: SizedBox(height: 300,width: 300,),
-        ),
-      )
-    );
+          // Elevated Button
+          ElevatedButton(
+            onPressed: () {},
+            child: Text("Login"),
+            style: ElevatedButton.styleFrom(
+              elevation: 20,
+              backgroundColor: Colors.red,
+            ),
+          ),
+
+          // Elevated button icon
+          ElevatedButton.icon(
+            onPressed: () {},
+            icon: Icon(Icons.download),
+            label: Text("Download"),
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.greenAccent,
+            ),
+          ),
+        ],
+      ),
+    ));
   }
 }
