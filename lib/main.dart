@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
 
         primarySwatch: Colors.blue,
@@ -32,16 +33,16 @@ class _Home_ScreenState extends State<Home_Screen> {
   Widget build(BuildContext context) {
     return Scaffold(
 
-      body: Container(
-        // Container single widget so child ektai use korte parbo.
-        height: 300,
-        width: 300,
-        alignment:Alignment.center,
-        margin: EdgeInsets.fromLTRB(10,10,10,10),
-        padding: EdgeInsets.fromLTRB(10,10, 10, 10),
-        child: Icon(Icons.shopping_bag,size: 50,color:Colors.red)
-
-      ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Text("java course",style: TextStyle(fontSize: 22),),
+          Text("c++ course",style: TextStyle(fontSize: 22),),
+          Text("python course",style: TextStyle(fontSize: 22),),
+          Text("dart course",style: TextStyle(fontSize: 22),),
+        ],
+      )
 
     );
   }
