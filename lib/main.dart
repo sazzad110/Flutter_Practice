@@ -33,17 +33,16 @@ class _Home_ScreenState extends State<Home_Screen> {
     return Scaffold(
 
       body: Container(
+        // Container single widget so child ektai use korte parbo.
         height: 300,
         width: 300,
+        alignment:Alignment.center,
         margin: EdgeInsets.fromLTRB(10,10,10,10),
         padding: EdgeInsets.fromLTRB(10,10, 10, 10),
-        child: Text("This is body part",style: TextStyle(fontSize: 30),),
-        alignment:Alignment.center,
-        decoration: BoxDecoration(
-          color: Colors.blue,
-          borderRadius: BorderRadius.only(bottomRight: Radius.circular(50),topLeft: Radius.circular(50))
-        ),
+        child: Icon(Icons.shopping_bag,size: 50,color:Colors.red)
+
       ),
+
     );
   }
 }
