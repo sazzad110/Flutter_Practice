@@ -33,41 +33,13 @@ class _Home_ScreenState extends State<Home_Screen> {
   Widget build(BuildContext context) {
     return Scaffold(
 
-      body: SingleChildScrollView(
-        child: Column(
-        
-          children: [
-        
-            Image.network('https://static.vecteezy.com/system/resources/thumbnails/025/284/015/small_2x/close-up-growing-beautiful-forest-in-glass-ball-and-flying-butterflies-in-nature-outdoors-spring-season-concept-generative-ai-photo.jpg'
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text("Tree inside a circle",style: TextStyle(fontSize: 22,),),
-                Row(
-                  children: [
-                    Icon(Icons.star,size: 40,color:Colors.red),
-                    Text("41"),
-                  ],
-                )
-              ],
-            ),
-            Container(            // make this row inside a container
-              height: 80,
-              color: Colors.red,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Icon(Icons.call),
-                  Icon(Icons.route),
-                  Icon(Icons.share),
-                ],
-              ),
-            ),
-            SizedBox(height: 8,),         // make a height between 2 elements.
-            Text("asing population, the threats towards nature are increasing. With the growth in population, the resources are now depleting. Excessive levels of air and environmental pollutants add to the mix. Industrial waste, unrestricted vehicle use, illicit tree cutting, wildlife hunting, nuclear power plants, and a slew of other factors are contributing to the disruption of natural systems. The extinction of species as enormous as. "
-            ),
-          ],
+      body: Center(
+        child: Card(
+          color: Colors.blue,
+          elevation: 60,
+          shadowColor: Colors.blueAccent,
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.only(topLeft:Radius.circular(40),bottomRight:Radius.circular(40))),
+          child: SizedBox(height: 300,width: 300,),
         ),
       )
     );
