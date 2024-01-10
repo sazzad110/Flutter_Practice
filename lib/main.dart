@@ -30,6 +30,6 @@ class Home_Screen extends StatefulWidget {
 class _Home_ScreenState extends State<Home_Screen> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();           // eta return korle black screen asbe.
+    return const Scaffold();           // eta return korle white screen asbe.
   }
 }
