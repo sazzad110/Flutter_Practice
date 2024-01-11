@@ -31,58 +31,12 @@ class _Home_ScreenState extends State<Home_Screen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Container(
-      padding: EdgeInsets.symmetric(vertical: 40, horizontal: 90),
-      child: Column(
-        children: [
-          // Normal Text Button
-          TextButton(
-            onPressed: () {},
-            child: Text("Register"),
-            style: TextButton.styleFrom(
-                elevation: 20,
-                backgroundColor: Colors.green,
-                side: BorderSide(
-                  width: 2,
-                  color: Colors.black,
-                  style: BorderStyle.solid,
-                )),
-          ),
-
-          // Elevated Button
-          ElevatedButton(
-            onPressed: () {},
-            child: Text("Login"),
-            style: ElevatedButton.styleFrom(
-              elevation: 20,
-              backgroundColor: Colors.red,
-            ),
-          ),
-
-          // Elevated button with icon
-          ElevatedButton.icon(
-            onPressed: () {},
-            icon: Icon(Icons.download),
-            label: Text("Download"),
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.greenAccent,
-            ),
-          ),
-
-          // Elevated button with icon sign right side
-          ElevatedButton(
-              onPressed: () {},
-              child: Row(
-                mainAxisSize: MainAxisSize.min, // size choto hoye gelo
-                children: [Text("Download"), Icon(Icons.download)],
-              )),
-
-          // Outline button
-          OutlinedButton(onPressed: () {}, child: Text("Logout")),
-          //Icon Button
-          IconButton(onPressed: () {}, icon: Icon(Icons.download)),
-        ],
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Icon(Icons.add),
+        backgroundColor: Colors.green,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
       ),
-    ));
+    );
   }
 }
