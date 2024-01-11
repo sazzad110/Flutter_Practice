@@ -59,7 +59,7 @@ class _Home_ScreenState extends State<Home_Screen> {
             ),
           ),
 
-          // Elevated button icon
+          // Elevated button with icon
           ElevatedButton.icon(
             onPressed: () {},
             icon: Icon(Icons.download),
@@ -68,6 +68,19 @@ class _Home_ScreenState extends State<Home_Screen> {
               backgroundColor: Colors.greenAccent,
             ),
           ),
+
+          // Elevated button with icon sign right side
+          ElevatedButton(
+              onPressed: () {},
+              child: Row(
+                mainAxisSize: MainAxisSize.min, // size choto hoye gelo
+                children: [Text("Download"), Icon(Icons.download)],
+              )),
+
+          // Outline button
+          OutlinedButton(onPressed: () {}, child: Text("Logout")),
+          //Icon Button
+          IconButton(onPressed: () {}, icon: Icon(Icons.download)),
         ],
       ),
     ));
