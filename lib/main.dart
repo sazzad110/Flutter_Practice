@@ -31,11 +31,46 @@ class _Home_ScreenState extends State<Home_Screen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        child: Icon(Icons.add),
-        backgroundColor: Colors.green,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+      body: Center(
+        child: InkWell(
+          onTap: () {
+            print("button pressed");
+          },
+          child: Container(
+            height: 60,
+            width: 150,
+            decoration: BoxDecoration(
+              boxShadow: [
+                BoxShadow(
+                  offset: Offset(0.0, 0.20),
+                  blurRadius: 30,
+                  color: Colors.black,
+                )
+              ],
+              borderRadius: BorderRadius.circular(30),
+              color: Colors.white,
+            ),
+            child: Row(
+              children: [
+                Container(
+                  height: 60,
+                  width: 110,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(95),
+                      bottomLeft: Radius.circular(95),
+                      bottomRight: Radius.circular(200),
+                    ),
+                    color: Colors.greenAccent,
+                  ),
+                  child: Text("Home"),
+                  alignment: Alignment.center,
+                ),
+                Icon(Icons.home),
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }
