@@ -1,5 +1,6 @@
-import 'package:firs_project/card_design.dart';
 import 'package:flutter/material.dart';
+
+import 'Register_form_with_textfield.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: CardDesign(), // Calling Home_Screen
+      home: TextFieldDemo(), // Calling Home_Screen
     );
   }
 }
