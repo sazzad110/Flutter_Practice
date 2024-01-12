@@ -1,4 +1,5 @@
 import 'package:firs_project/contact_list.dart';
+import 'package:firs_project/stack_demo.dart';
 import 'package:flutter/material.dart';
 
 import 'listview_demo.dart';
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: ContactList(), // Calling Home_Screen
+      home: StackDemo(), // Calling Home_Screen
     );
   }
 }
