@@ -3,6 +3,7 @@ import 'package:firs_project/stack_demo.dart';
 import 'package:flutter/material.dart';
 
 import 'listview_demo.dart';
+import 'modal_bottom_sheet.dart';
 
 void main() {
   runApp(MyApp());
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: StackDemo(), // Calling Home_Screen
+      home: ModalBottomSheetDemo(), // Calling Home_Screen
     );
   }
 }
