@@ -1,3 +1,4 @@
+import 'package:firs_project/animated_crossfade_page.dart';
 import 'package:firs_project/contact_list.dart';
 import 'package:firs_project/page_view_demo.dart';
 import 'package:firs_project/stack_demo.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: PageViewDemo(), // Calling Home_Screen
+      home: AnimatedCrossfadePage(), // Calling Home_Screen
     );
   }
 }
